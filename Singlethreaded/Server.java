@@ -1,5 +1,6 @@
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -13,7 +14,10 @@ public class Server {
             while (true) {
                 try (Socket clientSocket = serverSocket.accept()) {
                     System.out.println("Accepted connection from " + clientSocket.getRemoteSocketAddress());
+                    PrintWriter toClient = new PrintWriter(clientSocket.getOutputStream(), true);
+                    toClient.println("Hello from single-threaded server!");
                 }
+           
             }
         } catch (IOException e) {
             e.printStackTrace();
