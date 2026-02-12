@@ -7,10 +7,10 @@ import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class  {
+public class ThreadPoolServer  {
     private final ExecutorService threadPool;
 
-    public Server(int poolSize) {
+    public ThreadPoolServer(int poolSize) {
         this.threadPool = Executors.newFixedThreadPool(poolSize);
     }
 
@@ -43,7 +43,7 @@ public class  {
     public static void main(String[] args) {
         int port = 8010;
         int poolSize = 100;
-        Server server = new Server(poolSize);
+        ThreadPoolServer server = new ThreadPoolServer(poolSize);
 
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             serverSocket.setSoTimeout(70000);
