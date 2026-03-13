@@ -144,7 +144,7 @@ All tests: **10,000 users · 60 s ramp-up · 1 loop · Intel i7-7600U (4 cores) 
 |---|---|---|---|---|---|---|---|
 | Single-Threaded | 2 ms | 1 ms | 5 ms | 8 ms | 18 ms | 112 ms | 166.7 req/s |
 | Thread Pool (100 workers) | 1 ms | 1 ms | 2 ms | 3 ms | 6 ms | 77 ms | 166.7 req/s |
-| Virtual Threads + Cache | 1 ms | 1 ms | 2 ms | 3 ms | 6 ms | 79 ms | 166.7 req/s |
+| Virtual Threads  | 1 ms | 1 ms | 2 ms | 3 ms | 6 ms | 79 ms | 166.7 req/s |
 
 > **Error rate: 0.00% across all three implementations.**
 
