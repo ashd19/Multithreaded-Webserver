@@ -169,7 +169,7 @@ These earlier JMeter runs used a heavier load profile and show the breakdown poi
 | Single-Threaded | Thread Pool |
 |---|---|
 | ![Single-Threaded Graph](Images/SingleThreaded/SingleThreaded-Graph.png) | ![Thread Pool Graph](Images/ThreadPool/ThreadPool-Graph.png) |
-
+Virtual Threads
 ![Virtual Threads Graph](Images/VritualThreaded/virtualThreaded-graph.png)
 
 ---
